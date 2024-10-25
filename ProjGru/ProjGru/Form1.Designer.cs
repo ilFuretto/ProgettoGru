@@ -35,12 +35,14 @@
             ApplicaButton = new Button();
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
             AbbassaButton = new Button();
             ResetButton = new Button();
+            numericUpDown1 = new NumericUpDown();
+            numericUpDown2 = new NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -72,16 +74,20 @@
             AlzaButton.TabIndex = 2;
             AlzaButton.Text = "ALZA";
             AlzaButton.UseVisualStyleBackColor = true;
+            AlzaButton.MouseDown += Alza;
+            AlzaButton.MouseUp += bottone_MouseUp;
             // 
             // ApplicaButton
             // 
+            ApplicaButton.BackColor = Color.Lime;
             ApplicaButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             ApplicaButton.Location = new Point(232, 136);
             ApplicaButton.Name = "ApplicaButton";
             ApplicaButton.Size = new Size(108, 49);
             ApplicaButton.TabIndex = 4;
             ApplicaButton.Text = "APPLICA";
-            ApplicaButton.UseVisualStyleBackColor = true;
+            ApplicaButton.UseVisualStyleBackColor = false;
+            ApplicaButton.Click += ApplicaButton_Click;
             // 
             // label1
             // 
@@ -103,20 +109,6 @@
             label2.TabIndex = 6;
             label2.Text = "Altezza Minima";
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(56, 111);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(116, 23);
-            textBox1.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(56, 192);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(116, 23);
-            textBox2.TabIndex = 8;
-            // 
             // AbbassaButton
             // 
             AbbassaButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
@@ -126,6 +118,8 @@
             AbbassaButton.TabIndex = 9;
             AbbassaButton.Text = "ABBASSA";
             AbbassaButton.UseVisualStyleBackColor = true;
+            AbbassaButton.MouseDown += Abbassa;
+            AbbassaButton.MouseUp += bottone_MouseUp;
             // 
             // ResetButton
             // 
@@ -140,15 +134,37 @@
             ResetButton.UseVisualStyleBackColor = false;
             ResetButton.Click += ResetButton_Click;
             // 
+            // numericUpDown1
+            // 
+            numericUpDown1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            numericUpDown1.Location = new Point(56, 111);
+            numericUpDown1.Maximum = new decimal(new int[] { 650, 0, 0, 0 });
+            numericUpDown1.Minimum = new decimal(new int[] { 209, 0, 0, 0 });
+            numericUpDown1.Name = "numericUpDown1";
+            numericUpDown1.Size = new Size(116, 29);
+            numericUpDown1.TabIndex = 11;
+            numericUpDown1.Value = new decimal(new int[] { 209, 0, 0, 0 });
+            // 
+            // numericUpDown2
+            // 
+            numericUpDown2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            numericUpDown2.Location = new Point(56, 188);
+            numericUpDown2.Maximum = new decimal(new int[] { 650, 0, 0, 0 });
+            numericUpDown2.Minimum = new decimal(new int[] { 209, 0, 0, 0 });
+            numericUpDown2.Name = "numericUpDown2";
+            numericUpDown2.Size = new Size(116, 29);
+            numericUpDown2.TabIndex = 12;
+            numericUpDown2.Value = new decimal(new int[] { 650, 0, 0, 0 });
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1184, 711);
+            Controls.Add(numericUpDown2);
+            Controls.Add(numericUpDown1);
             Controls.Add(ResetButton);
             Controls.Add(AbbassaButton);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(ApplicaButton);
@@ -159,6 +175,8 @@
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -171,9 +189,9 @@
         private Button ApplicaButton;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
         private Button AbbassaButton;
         private Button ResetButton;
+        private NumericUpDown numericUpDown1;
+        private NumericUpDown numericUpDown2;
     }
 }

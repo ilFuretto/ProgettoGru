@@ -19,29 +19,30 @@ namespace ProjGru
             get { return gru; } 
             set { gru = value; }
         }
-        public StazioneRadiocomando(string numSeriale)
+        public StazioneRadiocomando(string numSeriale, Gru gru)
         {
             this.numSeriale = numSeriale;
+            this.gru = gru;
         }
 
-        public void alza()
+        public void Alza()
         {
             Gru.alza();
         }
 
-        public void abbassa()
+        public void Abbassa()
         {
             Gru.abbassa();
         }
 
-        public void reset()
+        public void Reset()
         {
             Gru.reset();
         }
 
-        public void vediAlt()
+        public int VediAlt()
         {
-            Console.WriteLine(Gru.AltBraccio);
+            return Gru.AltBraccio;
         }
 
     }

@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\ProgettoGru\\ProjGru\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FDCBF3DD-41AF-471C-9DFE-CE09C3EC9D83}|ProjGru\\ProjGru.csproj|c:\\users\\admin\\desktop\\progettogru\\projgru\\projgru\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDCBF3DD-41AF-471C-9DFE-CE09C3EC9D83}|ProjGru\\ProjGru.csproj|solutionrelative:projgru\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDCBF3DD-41AF-471C-9DFE-CE09C3EC9D83}|ProjGru\\ProjGru.csproj|C:\\Users\\admin\\Desktop\\ProgettoGru\\ProjGru\\projgru\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FDCBF3DD-41AF-471C-9DFE-CE09C3EC9D83}|ProjGru\\ProjGru.csproj|solutionrelative:projgru\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDCBF3DD-41AF-471C-9DFE-CE09C3EC9D83}|ProjGru\\ProjGru.csproj|c:\\users\\admin\\desktop\\progettogru\\projgru\\projgru\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDCBF3DD-41AF-471C-9DFE-CE09C3EC9D83}|ProjGru\\ProjGru.csproj|solutionrelative:projgru\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDCBF3DD-41AF-471C-9DFE-CE09C3EC9D83}|ProjGru\\ProjGru.csproj|c:\\users\\admin\\desktop\\progettogru\\projgru\\projgru\\gru.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDCBF3DD-41AF-471C-9DFE-CE09C3EC9D83}|ProjGru\\ProjGru.csproj|solutionrelative:projgru\\gru.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDCBF3DD-41AF-471C-9DFE-CE09C3EC9D83}|ProjGru\\ProjGru.csproj|c:\\users\\admin\\desktop\\progettogru\\projgru\\projgru\\stazioneradiocomando.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDCBF3DD-41AF-471C-9DFE-CE09C3EC9D83}|ProjGru\\ProjGru.csproj|solutionrelative:projgru\\stazioneradiocomando.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\ProgettoGru\\ProjGru\\ProjGru\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "ProjGru\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\ProgettoGru\\ProjGru\\ProjGru\\Form1.Designer.cs",
+              "RelativeToolTip": "ProjGru\\Form1.Designer.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAAAHkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T17:58:14.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\ProgettoGru\\ProjGru\\ProjGru\\Form1.cs",
+              "RelativeDocumentMoniker": "ProjGru\\Form1.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\ProgettoGru\\ProjGru\\ProjGru\\Form1.cs*",
+              "RelativeToolTip": "ProjGru\\Form1.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA6wBUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T14:24:08.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StazioneRadiocomando.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\ProgettoGru\\ProjGru\\ProjGru\\StazioneRadiocomando.cs",
+              "RelativeDocumentMoniker": "ProjGru\\StazioneRadiocomando.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\ProgettoGru\\ProjGru\\ProjGru\\StazioneRadiocomando.cs",
+              "RelativeToolTip": "ProjGru\\StazioneRadiocomando.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAzwBEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T14:21:49.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Gru.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\ProgettoGru\\ProjGru\\ProjGru\\Gru.cs",
+              "RelativeDocumentMoniker": "ProjGru\\Gru.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\ProgettoGru\\ProjGru\\ProjGru\\Gru.cs",
+              "RelativeToolTip": "ProjGru\\Gru.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAswDwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T14:21:49.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Progettazione]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\ProgettoGru\\ProjGru\\ProjGru\\Form1.cs",
+              "RelativeDocumentMoniker": "ProjGru\\Form1.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\ProgettoGru\\ProjGru\\ProjGru\\Form1.cs [Progettazione]*",
+              "RelativeToolTip": "ProjGru\\Form1.cs [Progettazione]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T14:21:50.006Z",
+              "EditorCaption": " [Progettazione]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

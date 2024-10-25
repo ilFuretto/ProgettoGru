@@ -47,14 +47,18 @@ namespace ProjGru
 
         public void alza()
         {
-            if (AltBraccio <= AltMax)
+            if (AltBraccio+10 <= AltMax)
                 AltBraccio += 10;
+            else
+                AltBraccio = AltMax;
         }
 
         public void abbassa()
         {
-            if(AltBraccio>=AltMin)
+            if(AltBraccio-10 >= AltMin)
                 AltBraccio -= 10;
+            else
+                AltBraccio = AltMin;
         }
 
         public void reset()
