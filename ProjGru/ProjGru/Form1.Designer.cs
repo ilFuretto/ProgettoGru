@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
             AlzaButton = new Button();
             ApplicaButton = new Button();
             label1 = new Label();
@@ -39,10 +38,11 @@
             ResetButton = new Button();
             numericUpDown1 = new NumericUpDown();
             numericUpDown2 = new NumericUpDown();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -54,16 +54,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(940, 209);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(154, 102);
-            pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
             // 
             // AlzaButton
             // 
@@ -156,6 +146,16 @@
             numericUpDown2.TabIndex = 12;
             numericUpDown2.Value = new decimal(new int[] { 650, 0, 0, 0 });
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(989, 210);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(51, 86);
+            pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox2.TabIndex = 1;
+            pictureBox2.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -174,9 +174,9 @@
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -184,7 +184,6 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
         private Button AlzaButton;
         private Button ApplicaButton;
         private Label label1;
@@ -193,5 +192,6 @@
         private Button ResetButton;
         private NumericUpDown numericUpDown1;
         private NumericUpDown numericUpDown2;
+        private PictureBox pictureBox2;
     }
 }
