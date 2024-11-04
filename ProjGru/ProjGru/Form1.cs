@@ -16,6 +16,7 @@ namespace ProjGru
         private StazioneRadiocomando stazione1;
         private Gru gru1;
         private int posizioneGancio;
+        private int altezzaIniziale;
         private bool suonoInRiproduzione = false;
         private readonly object lockObj = new object();
 
@@ -24,6 +25,7 @@ namespace ProjGru
             InitializeComponent();
             simpleSound = new SoundPlayer(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "audio", "audioGru.wav"));
             posizioneGancio = pictureBox2.Location.Y;
+            altezzaIniziale = posizioneGancio;
             gru1 = new Gru("000001", "XCMG", 750, this.ClientSize.Height - pictureBox2.Height, posizioneGancio, posizioneGancio);
             stazione1 = new StazioneRadiocomando("000001", gru1);
         }
@@ -40,6 +42,7 @@ namespace ProjGru
                 posizioneGancio = stazione1.Gru.AltMax;
             }
             pictureBox2.Location = new Point(pictureBox2.Location.X, posizioneGancio);
+            pictureBox3.Height = posizioneGancio - altezzaIniziale;
 
             RiproduciSuonoAsync();
             Thread.Sleep(50);
@@ -52,7 +55,7 @@ namespace ProjGru
             {
                 stazione1.Abbassa();
                 AggiornaForm(10);
-                await Task.Delay(50); 
+                await Task.Delay(50);
             }
         }
 
@@ -76,6 +79,7 @@ namespace ProjGru
         {
             stazione1.Reset();
             posizioneGancio = stazione1.Gru.AltMin;
+            pictureBox3.Height = posizioneGancio - altezzaIniziale;
             pictureBox2.Location = new Point(pictureBox2.Location.X, posizioneGancio);
         }
 
@@ -85,7 +89,9 @@ namespace ProjGru
             {
                 stazione1.Gru.AltMin = Convert.ToInt16(numericUpDown1.Value);
                 stazione1.Gru.AltMax = Convert.ToInt16(numericUpDown2.Value);
-                pictureBox2.Location = new Point(pictureBox2.Location.X, stazione1.Gru.AltMin);
+                posizioneGancio = stazione1.Gru.AltMin;
+                pictureBox2.Location = new Point(pictureBox2.Location.X, posizioneGancio);
+                pictureBox3.Height = posizioneGancio - altezzaIniziale;
             }
             else
             {
@@ -121,6 +127,11 @@ namespace ProjGru
                     }
                 }
             });
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            pictureBox3.Size = new Size(pictureBox3.Size.Width, pictureBox2.Size.Height);
         }
     }
 }

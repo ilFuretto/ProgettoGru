@@ -39,10 +39,12 @@
             numericUpDown1 = new NumericUpDown();
             numericUpDown2 = new NumericUpDown();
             pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -129,11 +131,11 @@
             numericUpDown1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             numericUpDown1.Location = new Point(56, 111);
             numericUpDown1.Maximum = new decimal(new int[] { 650, 0, 0, 0 });
-            numericUpDown1.Minimum = new decimal(new int[] { 209, 0, 0, 0 });
+            numericUpDown1.Minimum = new decimal(new int[] { 210, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(116, 29);
             numericUpDown1.TabIndex = 11;
-            numericUpDown1.Value = new decimal(new int[] { 209, 0, 0, 0 });
+            numericUpDown1.Value = new decimal(new int[] { 210, 0, 0, 0 });
             // 
             // numericUpDown2
             // 
@@ -144,23 +146,34 @@
             numericUpDown2.Name = "numericUpDown2";
             numericUpDown2.Size = new Size(116, 29);
             numericUpDown2.TabIndex = 12;
-            numericUpDown2.Value = new decimal(new int[] { 650, 0, 0, 0 });
+            numericUpDown2.Value = new decimal(new int[] { 625, 0, 0, 0 });
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(989, 210);
+            pictureBox2.Location = new Point(991, 210);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(51, 86);
             pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(1001, 210);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(35, 501);
+            pictureBox3.TabIndex = 13;
+            pictureBox3.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1184, 711);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox3);
             Controls.Add(numericUpDown2);
             Controls.Add(numericUpDown1);
             Controls.Add(ResetButton);
@@ -169,14 +182,15 @@
             Controls.Add(label1);
             Controls.Add(ApplicaButton);
             Controls.Add(AlzaButton);
-            Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -193,5 +207,6 @@
         private NumericUpDown numericUpDown1;
         private NumericUpDown numericUpDown2;
         private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }
