@@ -141,7 +141,7 @@
             // 
             numericUpDown2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             numericUpDown2.Location = new Point(56, 188);
-            numericUpDown2.Maximum = new decimal(new int[] { 650, 0, 0, 0 });
+            numericUpDown2.Maximum = new decimal(new int[] { 625, 0, 0, 0 });
             numericUpDown2.Minimum = new decimal(new int[] { 209, 0, 0, 0 });
             numericUpDown2.Name = "numericUpDown2";
             numericUpDown2.Size = new Size(116, 29);

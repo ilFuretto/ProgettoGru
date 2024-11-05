@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjGru")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+131382e9d3cfd02c36be587a835fc48fbdcdb385")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70a62ec37141a32085234f79f54cef4bef0424e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjGru")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjGru")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
