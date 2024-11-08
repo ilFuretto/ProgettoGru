@@ -186,6 +186,7 @@
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            Shown += Form1_Shown;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();

@@ -34,6 +34,12 @@ namespace ProjGru
             get { return altBraccio; }
             set { altBraccio = value; }
         }
+        private StazioneRadiocomando stazione;
+        public StazioneRadiocomando Stazione
+        {
+            get { return stazione; }
+            set { stazione = value; }
+        }
 
         public Gru(string numSeriale, string produttore, int pesoMax, int altMax, int altMin, int altBraccio) 
         {
